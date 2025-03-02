@@ -91,9 +91,14 @@ export async function getStaticProps({ params }) {
 }
 
 const ArticlePage = ({ mdxSource, articles, isEmpty }) => {
+  const fileCount = articles.files.length;
+  const categoryCount = Object.values(articles.categories).reduce(
+    (acc, arr) => acc+arr.length, 0
+  );
+  const totalCount = fileCount + categoryCount;
   return (
     <>
-      <Header />
+      <Header articleCounter={totalCount} />
       <main className="article-main">
         <Sidebar articles={articles} />
         <div className="markdown-body at-articlePage">

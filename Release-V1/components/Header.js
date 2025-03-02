@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useRouter } from "next/router"; // Import useRouter
 import { HambergeIcon, HomeIcon, ProjectsIcon, AboutIcon } from "./HeaderIcons";
 
-const Header = () => {
+const Header = ({articleCounter}) => {
   const router = useRouter(); // Get current route
 
   return (
@@ -39,7 +39,7 @@ const Header = () => {
             >
               <ProjectsIcon />
               <span>Projects</span>
-              <span className="counter">10</span>
+              <span className="counter">{articleCounter}</span>
             </Link>
           </li>
           <li>
