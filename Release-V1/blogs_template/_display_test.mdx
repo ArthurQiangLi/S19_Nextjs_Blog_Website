@@ -1,0 +1,101 @@
+---
+title: "XXXXXXX"
+version1: "2025-02-24 21:12:21"
+---
+
+# Markdown Blog Elements Display Test
+reference: https://www.markdownguide.org/basic-syntax/#emphasis
+Welcome to the **Markdown Display Test**. This page demonstrates common markdown features.
+
+## 1. Headers
+### H3 Header
+#### H4 Header
+## 2. Emphasis
+
+- **Bold text**
+- _Italic text_
+- ~~Strikethrough~~
+
+## 3. Bockquotes
+> Dorothy followed her through many of the beautiful rooms in her castle.
+
+## 4. Lists
+### Unordered List
+
+- Item 1
+- Item 2
+- Item 3
+
+### Ordered List
+1. First item
+2. Second item
+3. Third item
+
+## 5. Code blocks
+Inline code: `console.log("Hello, world!")`
+Fenced code block:
+
+```javascript
+function greet(name) {
+  return `Hello, ${name}!`;
+}
+console.log(greet("MDX"));
+```
+
+```json
+{
+  "env": {
+    "myIncludePath": ["${workspaceFolder}/include", "${workspaceFolder}/src"],
+    "myDefines": ["DEBUG", "MY_FEATURE=1"]
+  }
+}
+```
+
+## 6. Links
+
+My favorite site is [GitHub](https://github.com/ArthurQiangLi).
+
+## 7. Images
+1. Single image
+
+<Figure
+  src="https://mdg.imgix.net/assets/images/san-juan-mountains.jpg?auto=format&fit=clip&q=40&w=1080"
+  alt="Our Team"
+  height="200px"
+  caption="A single image with a set height, aspect ratio preserved"
+/>
+
+2. Two Pictures in One Row
+
+<TwoFigures 
+  src1="https://mdg.imgix.net/assets/images/san-juan-mountains.jpg?auto=format&fit=clip&q=40&w=1080" 
+  alt1="Description of picture 1" 
+  caption1="This is the first image."
+  src2="https://mdg.imgix.net/assets/images/san-juan-mountains.jpg?auto=format&fit=clip&q=40&w=1080"
+  alt2="Description of picture 2"
+  caption2="This is the second image."
+  height="200px"
+  gap="20px"
+/>
+
+## 8. Videos
+
+<Video src="https://www.youtube.com/watch?v=MySuz5y9s5E" width="320px" />
+
+## 9. Tables
+
+1. Table with line breaks and long lines.
+
+| Project name     | National Cup Competition                                                                                                                                                                                                                                                                       |
+| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| My role          | Leader                                                                                                                                                                                                                                                                                              |
+| Technology stack | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in|
+|My work  | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in|
+
+
+2. Table
+
+| Syntax | Description                  |
+| ------ | ---------------------------- |
+| Header | Title                        |
+| List   | Here's a list! not supported |

@@ -1,0 +1,156 @@
+/* 1. level1 ######################################*/
+header {
+  background-color: var(--headerBgColor);
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgb(209, 217, 224) 0px -1px 0px 0px inset;
+}
+.header-globalBar {
+  padding: 16px 16px 8px 16px;
+  display: flex;
+  justify-content: space-between;
+}
+.header-localBar {
+  padding: 0 16px;
+}
+/* 1.1 inside globalBar ###################################### */
+.header-globalBar-start,
+.header-globalBar-end {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.header-globalBar-start{
+  flex: 1 1 auto;
+}
+.header-globalBar-logo {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+}
+.header-globalBar-button {
+  background: transparent;
+  border: 1px solid var(--borderColor);
+  border-radius: 6px;
+  width: 32px;
+  height: 32px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.header-globalBar-button svg{
+  fill: rgb(89, 99, 110);
+}
+.header-globalBar-myname {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 6px 8px;
+}
+.header-globalBar-logo2 { /* the github logo*/
+  width: 32px;
+  border-radius: 50%;
+}
+/* ###################################### */
+
+.header-link-text{ /* I don't understand here [2025/2/22]*/
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  cursor: pointer;
+  color: var(--fgColor);
+  background-color: initial;
+  font-size: var(--fontSizeMedium);
+  line-height: 30px;
+  padding: 0 8px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+}
+.header-link-text:hover{
+  background-color: var(--control-transparent-bgColor-hover);
+}
+
+/* ###################################### */
+
+/* ###################################### */
+
+/* 1.2 inside localBar ###################################### */
+
+.header-localBar ul{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  list-style: none;
+  line-height: 21px;
+  min-height: 48px;
+
+}
+.header-localBar ul li{
+  display: inline-flex;
+}
+.header-localBar ul li a{
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  cursor: pointer;
+  color: var(--fgColor);
+  background-color: initial;
+  font-size: var(--fontSizeMedium);
+  line-height: 30px;
+  padding: 0 8px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+}
+.header-localBar ul li a.active {
+  font-weight: 600;
+}
+.header-localBar ul li a.active::after { /* I don't understand here [2025/2/22]*/
+  background-color: var(--underlineNav-borderColor-active);
+  border-radius: 6px;
+  bottom: -9px;
+  content: "";
+  height: 2px;
+  position: absolute;
+  right: 50%;
+  transform: translate(50%, -50%);
+  width: 100%;
+  z-index: 1;
+}
+.header-localBar ul li a:hover{
+  background-color: var(--control-transparent-bgColor-hover);
+}
+.header-localBar ul li a svg{
+  color: #59636e;
+  width: 16px;
+  margin-right: 8px;
+  fill: #59636e;
+  display: inline;
+}
+.header-localBar ul li a span{
+  display: block;
+  white-space-collapse: collapse;
+  color: var(--fgColor);
+  cursor: pointer;
+  font-size: var(--fontSizeMedium);
+  line-height: 30px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.header-localBar ul li a .counter {
+  color: #1f2328;
+  background-color: rgba(129,139, 152, 0.12);
+  margin-left: 8px;
+  border: 1px solid rgba(255,255,255,0);
+  border-radius: 24px;
+  padding: 0 6px;
+  min-width: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+  text-size-adjust: 100%;
+  display: inline-block;
+}
